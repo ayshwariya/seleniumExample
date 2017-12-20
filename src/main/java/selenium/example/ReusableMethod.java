@@ -76,8 +76,8 @@ public class ReusableMethod extends Driver2{
 	 * Brief Description: click on object
 	 * Arguments: obj --> object, objName --> object name
 	 * created by: Automation team
-	 * Creation Date: Nov 08 2017
-	 * Last Mdified: Nov 08 2017 
+	 * Creation Date: Dec 18 2017
+	 * Last Mdified: Dec 18 2017 
 	 * */
 	public static void clickObj(WebElement obj, String objName) throws IOException{
 		if(obj.isDisplayed()){
@@ -95,8 +95,8 @@ public class ReusableMethod extends Driver2{
 	 * Brief Description: click the field
 	 * Arguments: obj --> object, objName --> object name
 	 * created by: Automation team
-	 * Creation Date: Nov 08 2017
-	 * Last Mdified: Nov 08 2017 
+	 * Creation Date: Dec 18 2017
+	 * Last Mdified: Dec 18 2017 
 	 * */
 	public static void clear(WebElement obj, String objName) throws IOException{
 		if(obj.isDisplayed()){
@@ -113,8 +113,8 @@ public class ReusableMethod extends Driver2{
 	 * Brief Description: verify the text
 	 * Arguments: obj --> object, text -->  text
 	 * created by: Automation team
-	 * Creation Date: Nov 08 2017
-	 * Last Mdified: Nov 09 2017 
+	 * Creation Date: Dec 18 2017
+	 * Last Mdified: Dec 18 2017  
 	 * */
 
 
@@ -142,8 +142,8 @@ public class ReusableMethod extends Driver2{
 	 * Brief Description: verify the value of attribute
 	 * Arguments: obj --> object, text -->  text
 	 * created by: Automation team
-	 * Creation Date: Nov 08 2017
-	 * Last Mdified: Nov 09 2017 
+	 * Creation Date: Dec 18 2017
+	 * Last Mdified: Dec 18 2017  
 	 * */
 
 
