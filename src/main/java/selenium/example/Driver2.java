@@ -17,7 +17,7 @@ public class Driver2 {
 	
 	static WebDriver driver;
 	
-	public static void main(String[] args) throws IOException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException {
+	public static void main(String[] args) throws IOException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, NoSuchMethodException, SecurityException, InterruptedException {
 
 		String dtTablePath = "F:/seleniumExam/TestSuite.xls";
 
@@ -52,6 +52,7 @@ public class Driver2 {
 					ReusableMethod.bw.close();
 				}
 
+								
 				chrome = recData[i][4];
 				if(chrome.equalsIgnoreCase("Y")){
 					testCase = recData[i][2];
@@ -64,7 +65,7 @@ public class Driver2 {
 
 					ReusableMethod.bw.close();
 				}
-
+				
 				IE = recData[i][5];
 				if(IE.equalsIgnoreCase("Y")){
 					testCase = recData[i][2];
@@ -77,6 +78,10 @@ public class Driver2 {
 
 					ReusableMethod.bw.close();
 				}
+
+				
+				
+				
 
 
 			}
