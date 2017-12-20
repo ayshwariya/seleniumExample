@@ -586,15 +586,12 @@ public class AutomationScript extends ReusableMethod {
 		String excelPath = "F:/seleniumExam/credentials.xls";
 		
 		String[][] recCreden = ReusableMethod.readExcel(excelPath, "Sheet1");
-		String Email, password,orgName,orgDo,taxPaid,timeZone;
+		String Email, password,orgName,orgDo;
 		
 			Email = recCreden[13][1];
 			password = recCreden[14][1];
 			orgName = recCreden[11][1];
 			orgDo = recCreden[12][1];
-			taxPaid = recCreden[15][1];
-			timeZone = recCreden[16][1];
-
 			
 			Thread.sleep(3000);
 			/* enter Email*/
@@ -629,17 +626,6 @@ public class AutomationScript extends ReusableMethod {
 		Thread.sleep(3000);
 		WebElement oName = driver.findElement(By.xpath(".//*[@id='text-1022-inputEl']"));
 		enterText(oName, orgName ,"organization Name");
-		
-		/*give where organizer pay tax*/
-		Thread.sleep(3000);
-		WebElement country = driver.findElement(By.xpath(".//*[@id='countryCmb-inputEl']"));
-		enterText(country, taxPaid ,"country name");
-		
-		/*give time zone*/
-		Thread.sleep(3000);
-		WebElement time = driver.findElement(By.xpath(".//*[@id='cmbTimeZone-inputEl']"));
-		enterText(time, timeZone ,"timeZone");
-
 
 		/*give organization do */
 		Thread.sleep(3000);
